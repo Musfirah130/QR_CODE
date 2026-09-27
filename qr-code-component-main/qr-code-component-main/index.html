@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="qrcodeCss.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
@@ -15,14 +16,14 @@
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+   <div id="1border">
+     <div id="img_parent">
+      <div id="div_img">
+       <img src="data:image/png;base64,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" width="200px" height="200px">
+        <p id="heading">Improve your Frontened skills by building projects</p>
+        <p id="content">Scan the QR Code to visit Frontendmentor and take your coding skill to the next level.</p>
+       </div>
+     </div>
+   </div> 
 </body>
 </html>
