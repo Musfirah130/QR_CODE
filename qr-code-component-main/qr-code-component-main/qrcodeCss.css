@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(196, 220, 228);
+    background-color: red;
 }
 #border1{
     background-color: white;
@@ -34,4 +34,9 @@ body{
     font-weight: light;
     text-align: center;
      margin-right: 25px;
+}
+@media screen and (max-width:480px) {
+  body{
+  background-color: blue;
+  }
 }
